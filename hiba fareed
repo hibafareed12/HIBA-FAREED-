@@ -1,0 +1,323 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "17aedc81-8e59-41be-8e3e-e2d171c91031",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "HIBA FREED\n",
+    "SP25-BBD-03"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "bdc0a14d-6114-4db1-b42d-317a1a1369f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n",
+      "12\n",
+      "14\n",
+      "16\n",
+      "18\n",
+      "20\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 1. Write a for loop to print all even numbersfrom 2 to 20.\n",
+    "for num in range(2,21,2):\n",
+    "    print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "10ca7824-c961-498b-b9ea-cdb31d2598da",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "HIBA\n",
+      "HUMNA\n",
+      "AHAD\n",
+      "NOOR\n",
+      "HADIA\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 2. Create a list of names and use a for loop to print each name in uppercase.\n",
+    "names=[\"hiba\",\"humna\",\"ahad\",\"noor\",\"hadia\"]\n",
+    "for name in names:\n",
+    "    print(name.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "a5c4621b-67be-43da-a9d2-17cd482d6e3d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "9\n",
+      "8\n",
+      "7\n",
+      "6\n",
+      "5\n",
+      "4\n",
+      "3\n",
+      "2\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 3.Use a for loop with range() to print numbers from 10 to 1 in reverse order.\n",
+    "for num in range(10,0,-1):\n",
+    "    print(num)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "2a3c6b7b-dfbf-4d1b-a915-dc8ac840d8cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "9\n",
+      "12\n",
+      "15\n",
+      "18\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 4.Use a for loop with range() to print numbers from 10 to 1 in reverse order.\n",
+    "numbers=[3,7,9,12,15,18,20,25]\n",
+    "for num in numbers:\n",
+    "   if num %3==0:\n",
+    "       print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "43a67197-ccad-49e7-924b-ff81521df116",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "4\n",
+      "9\n",
+      "16\n",
+      "25\n",
+      "36\n",
+      "49\n",
+      "64\n",
+      "81\n",
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 5.Write a loop that prints the squares of numbers from 1 to 10.\n",
+    "for num in range(1,11):\n",
+    "    print(num**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "5bb0c920-7dc9-492f-91ba-fe971119025b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Temperatures in Fahrenheit: [32.0, 50.0, 68.0, 86.0, 104.0, 212.0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 6.Given a list of temperatures in Celsius, use a for loop to convert each to Fahrenheit.\n",
+    "celsius_temperatures = [0, 10, 20, 30, 40, 100]\n",
+    "fahrenheit_temperatures = []\n",
+    "for temp in celsius_temperatures:\n",
+    "    fahrenheit = (temp * 9/5) + 32\n",
+    "    fahrenheit_temperatures.append(fahrenheit)\n",
+    "print(\"Temperatures in Fahrenheit:\", fahrenheit_temperatures)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "a1820b15-5f16-4c71-894e-3c35e8b355b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5x1=5\n",
+      "5x2=10\n",
+      "5x3=15\n",
+      "5x4=20\n",
+      "5x5=25\n",
+      "5x6=30\n",
+      "5x7=35\n",
+      "5x8=40\n",
+      "5x9=45\n",
+      "5x10=50\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 7.Create a for loop that prints the multiplication table of 5.\n",
+    "for num in range(1,11):\n",
+    "    print(f\"5x{num}={5*num}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "e98583e4-6435-4173-abc9-30faf43e6217",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sum: 1\n",
+      "sum: 3\n",
+      "sum: 6\n",
+      "sum: 10\n",
+      "sum: 15\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 8.Write a program to find the sum of all numbers in a list using a for loop\n",
+    "num_list=[1,2,3,4,5]\n",
+    "total= 0\n",
+    "for num in num_list:\n",
+    "    total += num\n",
+    "    print(\"sum:\",total)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "958b87db-de3a-44ac-ae10-bc2020d2bccd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "c\n",
+      "o\n",
+      "m\n",
+      "p\n",
+      "u\n",
+      "t\n",
+      "e\n",
+      "r\n"
+     ]
+    }
+   ],
+   "source": [
+    "#question no 9.Use a for loop to iterate through a string and print each character separately.\n",
+    "word=\"computer\"\n",
+    "for char in word:\n",
+    "    print(char)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "9f064c02-8712-4ee9-80e3-9254d48f80e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "mehran\n",
+      "corolla\n",
+      "mustang\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Question no 10. Create a list of words and use a for loop to print only the words with more than 5 letters.\n",
+    "words=[\"city\",\"civic\",\"tesla\",\"mehran\",\"corolla\",\"mustang\"]\n",
+    "for word in words:\n",
+    "    if len(word)>5:\n",
+    "        print(word)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e3edc87e-6f19-440e-9ae0-5775e572eb60",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cfaa3df9-f9c2-419d-873e-395ea8815e24",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-2024.02-py310",
+   "language": "python",
+   "name": "conda-env-anaconda-2024.02-py310-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
